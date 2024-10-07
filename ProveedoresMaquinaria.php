@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>AgroSmart</title>
+</head>
+
+<body>
+    <div class="mainHome">
+        <div class="lado1">
+            <br />
+            <img src="images/logo.png" alt="" class="Logo">
+            <br />
+            <nav>
+                <ul>
+                    <li><a href="home.php">Inicio</a></li>
+                    <li><a href="perfil.php">Perfil e inventario</a></li>
+                    <li><a href="NuevaMaquina.php">Insertar nueva maquina a utilizar</a></li>
+                    <li><a href="PlanificacionMantenimiento.php" class="active">Planificacion de mantenimiento</a></li>
+                    <li><a href="Reportes.php">Reportes y analisis</a></li>
+                    <li><a href="ProveedoresMaquinaria.php" class="active">Proveedores de maquinaria</a></li>
+                    <li><a href="NuevoProveedor.php">Insertar Nuevo proveedor de maquinaria</a></li>
+                    <li><a href="TecnicosMantenimiento.php">Tecnicos de mantenimiento</a></li>
+                    <li><a href="NuevoTecnicoMantenimiento">Insertar nuevo tecnico de mantenimiento</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="lado2">
+            <div class="bannerHora">
+                <?php
+            $fecha_actual = date("d-m-Y h:i:s");
+            echo "La fecha y hora actual es: $fecha_actual";
+            ?>
+                <a href="index.php">Cerrar sesion</a>
+            </div>
+            <div id="ww_5e9be276e538e" v='1.3' loc='id'
+                a='{"t":"horizontal","lang":"es","sl_lpl":1,"ids":["wl4203"],"font":"Arial","sl_ics":"one","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+                Más previsiones: <a href="https://oneweather.org/es/buenos_aires/25_days/" id="ww_5e9be276e538e_u"
+                    target="_blank">25 días tiempo Buenos Aires</a></div>
+            <script async src="https://app2.weatherwidget.org/js/?id=ww_5e9be276e538e"></script>
+            <div class="container-texto">
+                <p class="titulo1">Proveedores de maquinaria</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Cedula</th>
+                            <th scope="col">Profesion</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Correo electronico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mark</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <p>Copyright © 2023 By AgroSmart | Todos los derechos reservados. | <a
+                        href="Terminosycondiciones.php">Terminos y
+                        condiciones</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
